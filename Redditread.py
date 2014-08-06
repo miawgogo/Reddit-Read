@@ -11,11 +11,12 @@ title = soup.findAll("div", { "class" : "title" })
 mydiv = mydivs[0]
 print mydiv.text
 f = open('file.txt','w')
-f.write(mydiv.text)
+f.write(mydiv.text.encode('utf-8'))
 f.close()
 opt = str(raw_input("1.Save as wav 2. Play out load: "))
 if opt == "1":
  os.popen("espeak -a 100 -w" + title[0].text + " -f file.txt")
 elif opt == "2":
- os.popen("espeak -a 100" + mydiv.text)
+ os.popen("espeak -f file.txt")
+os.system("rm file.txt")
  
