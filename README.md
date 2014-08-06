@@ -1,15 +1,15 @@
-redditspeak
+Redditspeak
 ===========
 
-An python scrip that reads a reddit self. post using espeak
+A python script that reads a reddit self. post using espeak
 
-dependencies
+Dependencies
 ===
-* espek
-* Butiful Soup 4
+* espeak
+* Beautifulsoup 4
 
 Todo
 ===
-* Add Comandline arguements
+* Add Command arguments
 * Remove the need for a text file
-* fix error in some posts
+* Fix error caused by some posts
